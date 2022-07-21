@@ -15,7 +15,7 @@ const config: Config = {
 	NodeEnv: getConf("NODE_ENV", "development"),
 	Algorithm: getConf("ALGORITHM", "aes-192-cbc"),
 	SecretKey: getConf("SECRET_KEY", "Password"),
-	MongoUrl: getConf("MONGO_URL", "mongodb://localhost:27217/chat")
+	MongoUrl: getConf("MONGO_URL", "mongodb://localhost:27017/chat")
 };
 
 function getConf(name: string, def: string = ""): string {

@@ -55,7 +55,7 @@ export class ChatController {
 
 				if (!old_chat) io.emit(`${chat.room}`, chat);
 				if (n < 3 && !old_chat) recusive();
-			}, 5000);
+			}, 10000);
 			n++;
 		}
 		recusive();
